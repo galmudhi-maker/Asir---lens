@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#171329">
+  <meta name="description" content="عدسة عسير - اكتشف جمال عسير وتراثها عبر المكان والزمن">
+  <title>ASIR LENS | عدسة عسير</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="loader" id="loader">
+    <div class="loader-logo">A<span>.</span></div>
+    <p>نفتح نافذة إلى عسير...</p>
+  </div>
+
+  <header class="navbar">
+    <a href="#home" class="brand">
+      <span class="brand-symbol">A.</span>
+      <span>
+        <strong>ASIR LENS</strong>
+        <small>عدسة عسير</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="القائمة">☰</button>
+
+    <nav id="navLinks">
+      <a href="#home">الرئيسية</a>
+      <a href="#lens">العدسة الذكية</a>
+      <a href="#discover">اكتشف عسير</a>
+      <a href="#time">عبر الزمن</a>
+      <a href="#memory">ذاكرة عسير</a>
+      <a href="#planner">خطط رحلتك</a>
+    </nav>
+
+    <a href="#discover" class="nav-cta">ابدأ الاستكشاف ↗</a>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="eyebrow">A NEW WAY TO DISCOVER ASIR</span>
+        <h1>كل مكان<br>يحمل <span>حكاية.</span></h1>
+        <p>
+          اكتشف عسير بعدسة مختلفة، واستكشف جمالها
+          وتراثها، وانتقل بين حكايات الماضي وروعة الحاضر.
+        </p>
+        <div class="hero-actions">
+          <a href="#discover" class="btn-primary">ابدأ رحلتك <span>↗</span></a>
+          <a href="#lens" class="btn-outline">اكتشف العدسة الذكية</a>
+        </div>
+      </div>
+      <div class="hero-bottom">
+        <span>18° 12' N — 42° 30' E</span>
+        <span>ASIR REGION · SAUDI ARABIA</span>
+        <span>SCROLL TO EXPLORE ↓</span>
+      </div>
+      <div class="hero-number">01 / 06</div>
+    </section>
+
+    <!-- INTRO -->
+    <section class="intro section-padding">
+      <div class="section-tag">BEYOND THE ORDINARY</div>
+      <div class="intro-grid">
+        <h2>ليست مجرد<br>وجهة سياحية،<br><span>إنها حكاية.</span></h2>
+        <div class="intro-text">
+          <p>
+            في عسير، لكل جبل ذاكرة، ولكل قرية قصة،
+            ولكل طريق تفاصيل تستحق الاكتشاف.
+          </p>
+          <p>
+            صممنا عدسة عسير لتجمع بين التقنية والسياحة
+            والتراث في تجربة رقمية واحدة.
+          </p>
+          <a href="#discover" class="text-link">اكتشف عالم عدسة عسير ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SMART LENS -->
+    <section class="lens-section section-padding" id="lens">
+      <div class="section-heading">
+        <div>
+          <div class="section-tag">01 — SMART DISCOVERY</div>
+          <h2>العدسة <span>الذكية</span></h2>
+        </div>
+        <p>صورة واحدة قد تفتح لك بابًا إلى حكاية كاملة.</p>
+      </div>
+
+      <div class="lens-panel">
+        <div class="lens-visual">
+          <div class="scanner-frame">
+            <span></span><span></span><span></span><span></span>
+            <div class="scan-line"></div>
+            <div class="scanner-center">⌖</div>
+          </div>
+          <div class="lens-caption">ASIR LENS · VISUAL DISCOVERY</div>
+        </div>
+
+        <div class="lens-controls">
+          <span class="mini-tag">EXPLORE THROUGH YOUR CAMERA</span>
+          <h3>دعنا نتعرف<br>على هذا المكان.</h3>
+          <p>اختر صورة لمعلم من معالم عسير، وسنبحث عنه في مكتبة المعالم المدعومة لدينا.</p>
+          <label for="landmarkImage" class="upload-button">
+            <span>＋</span> اختر صورة للاستكشاف
+          </label>
+          <input type="file" id="landmarkImage" accept="image/*" hidden>
+          <div id="lensResult" class="result-box" aria-live="polite">
+            <p>بانتظار صورة المستكشف...</p>
+          </div>
+          <small class="note">نموذج تجريبي للتعرف على المعالم المسجلة، وليس نظام تعرف مفتوحًا على جميع الصور.</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- DISCOVER -->
+    <section class="discover-section section-padding" id="discover">
+      <div class="section-heading">
+        <div>
+          <div class="section-tag">02 — EXPLORE THE REGION</div>
+          <h2>وجهات <span>تأسر القلب</span></h2>
+        </div>
+        <p>من المرتفعات الخضراء إلى القرى التي تحفظ ذاكرة الأجيال.</p>
+      </div>
+
+      <div class="filter-bar" id="filters">
+        <button class="filter-btn active" data-filter="all">كل الوجهات</button>
+        <button class="filter-btn" data-filter="nature">طبيعة</button>
+        <button class="filter-btn" data-filter="heritage">تراث</button>
+        <button class="filter-btn" data-filter="mountain">مرتفعات</button>
+      </div>
+
+      <div class="destination-grid" id="destinationGrid"></div>
+    </section>
+
+    <!-- TIME -->
+    <section class="time-section section-padding" id="time">
+      <div class="section-tag">03 — A JOURNEY THROUGH TIME</div>
+      <div class="time-heading">
+        <h2>لو عاد بك الزمن،<br><span>كيف كان المكان؟</span></h2>
+        <p>اكتشف حكاية المكان، وتأمل كيف تغير عبر السنين.</p>
+      </div>
+
+      <div class="time-card">
+        <div class="time-image" id="timeImage">
+          <div class="time-image-overlay">
+            <span>TIME EXPERIENCE</span>
+            <h3 id="timePlace">رجال ألمع</h3>
+            <p id="timeDescription">قرية تحفظ بين جدرانها ذاكرة الأجيال.</p>
+          </div>
+        </div>
+        <div class="time-controls">
+          <label for="timeSlider">رحلة بين الماضي والحاضر</label>
+          <input type="range" id="timeSlider" min="0" max="100" value="100">
+          <div class="time-labels">
+            <span>الماضي</span>
+            <span id="timeValue">الحاضر</span>
+          </div>
+          <p class="note">المؤشر هنا يعرض مراحل وصفية للتجربة، وليس صورة تاريخية حقيقية متحولة.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEMORY -->
+    <section class="memory-section section-padding" id="memory">
+      <div class="section-heading">
+        <div>
+          <div class="section-tag">04 — THE SOUL OF ASIR</div>
+          <h2>ذاكرة <span>عسير</span></h2>
+        </div>
+        <p>تراث لا ينسى، وفنون تحكي هوية المكان.</p>
+      </div>
+
+      <div class="memory-grid">
+        <article class="memory-card memory-art">
+          <span>01 / ART</span>
+          <h3>القط العسيري</h3>
+          <p>فن تشكيلي أصيل يعكس جمال الزخارف والألوان.</p>
+        </article>
+        <article class="memory-card memory-heritage">
+          <span>02 / HERITAGE</span>
+          <h3>العمارة التراثية</h3>
+          <p>حكايات الطين والحجر والبيوت القديمة.</p>
+        </article>
+        <article class="memory-card memory-culture">
+          <span>03 / CULTURE</span>
+          <h3>الحياة العسيرية</h3>
+          <p>عادات وتقاليد وهوية تتوارثها الأجيال.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PLANNER -->
+    <section class="planner-section section-padding" id="planner">
+      <div class="planner-box">
+        <div class="section-tag">05 — YOUR JOURNEY</div>
+        <h2>رحلتك في عسير،<br><span>نخططها معًا.</span></h2>
+        <p>اختر اهتماماتك ودع رفيق الرحلة يقترح لك بداية استكشافك.</p>
+
+        <label for="tripType">ما الذي تحب اكتشافه؟</label>
+        <select id="tripType">
+          <option value="nature">الطبيعة والجبال</option>
+          <option value="heritage">التراث والتاريخ</option>
+          <option value="all">تجربة متنوعة</option>
+        </select>
+
+        <button class="btn-primary" id="planButton">اكتشف اقتراحي ↗</button>
+        <div id="planResult" class="plan-result" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- CHALLENGE -->
+    <section class="challenge-section section-padding" id="challenge">
+      <div class="section-tag">06 — ASIR EXPLORER</div>
+      <h2>هل تعرف عسير <span>حقًا؟</span></h2>
+      <p>اختبر معلوماتك واكتشف كم تعرف عن هذه المنطقة الساحرة.</p>
+      <div class="quiz-box" id="quizBox">
+        <div class="quiz-count">ASIR KNOWLEDGE TEST</div>
+        <h3 id="quizQuestion">أين تقع قرية رجال ألمع التراثية؟</h3>
+        <div id="quizAnswers" class="quiz-answers"></div>
+        <p id="quizFeedback" aria-live="polite"></p>
+        <button id="nextQuestion" class="btn-primary" hidden>السؤال التالي ↗</button>
+      </div>
+    </section>
+
+    <!-- FINAL -->
+    <section class="final-section">
+      <div class="final-content">
+        <div class="section-tag">YOUR STORY STARTS HERE</div>
+        <h2>عسير أقرب<br><span>مما تتخيل.</span></h2>
+        <p>افتح عدستك، واكتشف حكاية المكان.</p>
+        <a href="#home" class="btn-primary">عد إلى البداية ↑</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-brand">ASIR LENS<span>.</span></div>
+    <p>عدسة عسير — نافذة رقمية لاكتشاف المكان والزمن والتراث.</p>
+    <p class="footer-credit">إعداد الطالبة: غلا | مشروع سياحي تقني إبداعي</p>
+    <small>© 2026 ASIR LENS. جميع الحقوق محفوظة.</small>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
